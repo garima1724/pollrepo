@@ -1,0 +1,138 @@
+1) It is a write less do more js library.
+2) It makes js easier on our library.
+3) It converts long js codes into methods and you can call them in one line.
+4) It simplifies a lot complicated things from js like ajax and dom manuplulation.
+5) Jquery will work only after your documents completely loaded.These are known as document ready events.
+
+To include jquery file in your files:
+<head>
+<script src = "jquery-3.1.1.min.js">
+</script>
+</head>
+OR
+..src = "jquery-3.4.0.min.js">
+
+To include online jquey file:
+"https...."
+
+SYNTAX:
+$(selector).action();
+
+eg1:    $(this).hide()
+	$("P").hide(); -> this will hide the paragraph.
+	$(".test").hide() -> hides the html element class with the name test
+	$("#test").hide() -> hides the html element with id named as test.
+
+QUERY SELECTOR:
+
+1) It allows you to select and manipulate html elements based on id,class,type,attributes,value of attributes and 
+   webcode.
+2) All selectors in jqury start with `$` sign and `()`.
+
+ELEMENT SELECTOR:
+
+<html>
+<head>
+<script src = "jquery-3.4.0.min.js">
+</script>
+<script>	
+	$document.ready(function()
+	{
+		$("P").click(function()
+		{
+			$(this).hide()
+		});
+	});
+</head>
+<body>
+	<P>it's first line</P>
+	<P>it's second line</P>
+	<P>still writing</P>
+</body>
+</html>
+
+ID SELECTOR:
+
+<html>
+<head>
+<script src = "jquery-3.4.0.min.js">
+</script>
+<script>	
+	$document.ready(function()
+	{
+		$(button).click(function() //If we give the id of the button as b1 say then here in place of button 
+					     we can write b1.
+		{
+			$(#test).hide()
+		});
+	});
+</head>
+<body>
+	<P id="test">it's first line</P>
+	<P>it's second line</P>
+	<P>still writing</P>
+	<button>Click Me</button>
+</body>
+</html>
+
+//if we give id to the button as b2 and then use that id b2 to show the button as id.show().
+
+CLASS SELECTOR:
+
+<html>
+<head>
+<script src = "jquery-3.4.0.min.js">
+</script>
+<script>	
+	$document.ready(function()
+	{
+		$(button).click(function()
+		{
+			$(.test).hide()
+		});
+	});
+</head>
+<body>
+	<h2 class="test">The Class Selector</h2>
+	<P class="test">it's first line</P>
+	<P>it's second line</P>
+	<P>still writing</P>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
